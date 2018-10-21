@@ -38,6 +38,12 @@ function hideWord(){
     };
 };
 
+function revealWord(){
+    for (i = 0; i < randomWord.length; i++){
+           hiddenWord[i] = randomWord[i]
+        };
+    };
+
 function revealLetter(){
     for (i = 0; i < randomWord.length; i++){
 
@@ -92,7 +98,7 @@ function checkLose(){
     if (guesses === 0){
 
         loseGame();
-
+        revealWord();
         document.getElementById("youLose").textContent = "L";
         winStatus = true;
         letterGuesses = ["Press Any Key to Start"]
