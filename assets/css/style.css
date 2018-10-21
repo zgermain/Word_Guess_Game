@@ -4,8 +4,8 @@ body{
 
 .container{
     background-color:#780116;
-    max-width: 700px;
-    min-height: 520px;
+    max-width: 500px;
+    min-height: 430px;
     padding-top: 20px;
 }
 
@@ -13,6 +13,7 @@ body{
 h1, h2, h4{
     color:#FBFCFF;
     text-align:center;
+    font-size: 30px;
 }
 
 hr{
@@ -32,7 +33,7 @@ hr{
 } */
 
 p{
-    font-size:3rem;
+    font-size:30px;
     color:#FBFCFF;
     text-align: center;
 }
@@ -40,7 +41,7 @@ p{
 .continue{
     color:rgba(251, 252, 255, 0.493);
 }
-#hiddenWord-div{
+#hiddenWord-div, #letterGuesses-div{
     letter-spacing: 3px;
 }
 
@@ -49,9 +50,17 @@ p{
 }
 
 #mobile-button{
-    text-align: center;
+    text-align: Right;
     float:center;
 }
+
+#youWin, #youLose{
+    font-size: 40px;
+}
+
+
+
+
 
 @media (max-width: 500px) {
     h1{
@@ -71,7 +80,7 @@ p{
     }
 
     .container{
-        min-height: 280px;
+        min-height: 415px;
     }
 }
 
@@ -93,7 +102,7 @@ p{
     }
 
     .container{
-        min-height: 260px;
+        min-height: 390px;
     }
 }
 

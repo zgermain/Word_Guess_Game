@@ -2,12 +2,12 @@
 
 var wins = 0;
 var losses = 0;
-var guesses = 12;
+var guesses = 8;
 var letterGuesses = ["Press Any Key to Start"];
 var letterArray = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-var wordList = ['Stuff', 'Test', 'String of Words', 'Zack']
+var wordList = ['Buffy the Vampire Slayer','Angel','Charmed','The X Files','Twin Peaks','Roswell','Party of Five','Sliders','My So Called Life','NYPD Blue','Northern Exposure','The Pretender','Dark Shadows','Millennium','Once and Again','Picket Fences','Profiler','Viper','Seaquest DSV','American Gothic','The Outer Limits','Eerie, Indiana','Harsh Realm','Dark Skies','Family Guy','South Park','King of the Hill','The Nanny','The Fresh Prince of Bel Air','Blossom','Freaks and Geeks','Ally McBeal','Mad About You','Wings','Just Shoot Me','In Living Color','MADtv','Popular']
 var randomWord = "";
-var hiddenWord = ["Guess Me."];
+var hiddenWord = ["90's TV Shows"];
 var userInput = "";
 var winStatus = true;
 
@@ -30,7 +30,7 @@ function hideWord(){
     for (i = 0; i < randomWord.length; i++){
 
         if (randomWord[i] === ' '){
-           hiddenWord[i] = ' '
+           hiddenWord[i] = randomWord[i]
         } else {
             hiddenWord[i] = '_'
         };
@@ -61,7 +61,7 @@ function display(){
 
 function resetGame(){
 
-    guesses = 12;
+    guesses = 8;
     letterGuesses = [];
     hiddenWord = [];
     document.getElementById("youWin").textContent = "";
@@ -93,7 +93,7 @@ function checkLose(){
 
         loseGame();
 
-        document.getElementById("youLose").textContent = "Loser";
+        document.getElementById("youLose").textContent = "L";
         winStatus = true;
         letterGuesses = ["Press Any Key to Start"]
         display();
@@ -106,7 +106,7 @@ function checkWin(){
         winGame();
 
         letterGuesses = ["Press Any Key to Start"]
-        document.getElementById("youWin").textContent = "Winner";
+        document.getElementById("youWin").textContent = "W";
         display();
         winStatus = true;
     };
