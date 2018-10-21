@@ -1,0 +1,96 @@
+body{
+    background-color: #CECCCC;
+}
+
+.container{
+    background-color:#780116;
+    max-width: 700px;
+    min-height: 520px;
+    padding-top: 20px;
+}
+
+
+h1, h2, h4{
+    color:#FBFCFF;
+    text-align:center;
+}
+
+hr{
+    border-color:#FBFCFF8e;
+}
+
+.game-title{
+    color:#780116;
+}
+
+#sub-head{
+    font-size:1.5rem;
+}
+
+/* .push{
+    margin-bottom: 100px;
+} */
+
+p{
+    font-size:3rem;
+    color:#FBFCFF;
+    text-align: center;
+}
+
+#hiddenWord-div{
+    letter-spacing: 3px;
+}
+
+#mobile-keyboard{
+    text-align: center;
+}
+
+#mobile-button{
+    text-align: center;
+    float:center;
+}
+
+@media (max-width: 500px) {
+    h1{
+        font-size:30px;
+    }
+
+    .display-4{
+        font-size: 50px;
+    }
+
+    #sub-head{
+        font-size:20px;
+    }
+
+    #wins-div, #losses-div, #guesses-div, #letterGuesses-div{
+        font-size:30px;
+    }
+
+    .container{
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1{
+        font-size:25px;
+    }
+
+    /* .display-4{
+        font-size: 45px;
+    }
+
+    #sub-head{
+        font-size:15px;
+    } */
+
+    #wins-div, #losses-div, #guesses-div, #letterGuesses-div{
+        font-size:25px;
+    }
+
+    .container{
+        min-height: 260px;
+    }
+}
+
