@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,70 +12,79 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
 
     <div>
-        <h1 class = "game-title display-4">Word Guess: you know...Hang Man</h1>
-        <p class = "game-title" id = "sub-head">(press any letter on the keyboard)</h1>
+        <h1 class="game-title display-4">Word Guess</h1>
+        <p class="game-title" id="sub-head">(press any letter on the keyboard)</h1>
 
     </div>
-    <div class = "container rounded" id = "test">
-        
-        <div class = "row">
-                <div class = "col-4">
-                        <h1>wins</h1>
-                        <p id = "wins-div"></p>
-                </div>
-                <div class = "col-4">
-                        <h1>losses</h1>
-                        <p id = "losses-div"></p>
-                </div>
-                <div class = "col-4">
-                    <h1>guesses</h1>
-                    <p id = "guesses-div"></p>
-                </div>
+    <div class="container rounded" id="test">
+
+        <div class="row">
+
+            <div class="col-4">
+                <h1>losses</h1>
+                <p id="losses-div"></p>
+            </div>
+            <div class="col-4">
+                <h1>guesses</h1>
+                <p id="guesses-div"></p>
+            </div>
+            <div class="col-4">
+                <h1>wins</h1>
+                <p id="wins-div"></p>
+            </div>
         </div>
 
         <hr>
 
-        <div class = "row">
-                <div class = "col-md-12">
-                        <h1>guess the word or phrase</h1>
-                        <div>
-                            <p id = "hiddenWord-div"></p>
-                        </div>
-                        <br>
+        <div class="row">
+            <div class = "col-2">
+                <p class = "continue" id = "youLose">*</p> 
+            </div>
+            <div class="col-8">
+                <!-- <h1>guess the password</h1> -->
+                <div>
+                    <p id="hiddenWord-div"></p>
                 </div>
+                <br>
+            </div>
+            <div class = "col-2">
+                <p class = "continue" id = "youWin">*</p> 
+            </div>
         </div>
 
         <hr>
 
-        <div class = "row">
-                <div class = "col-md-12">
-                        <h1>letters guessed so far</h1>
-                        <div>
-                            <p id = "letterGuesses-div"></p>
-                        </div>
-                        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>letters guessed so far</h1>
+                <div>
+                    <p id="letterGuesses-div"></p>
                 </div>
+                <br>
+            </div>
         </div>
-        
-            
+
+
     </div>
     <div>
         <br>
-        <h4 class = "game-title">Zack Germain</h4>
-    
+        <h4 class="game-title">Zack Germain</h4>
+
     </div>
 
-    
+
     <!-- <div id = "mobile-keyboard">
         <button onclick="mobileKeyboard()" type="button" class="btn btn-info">click me</button>
     </div>    -->
-        
-  
+
+
 
 
     <script src="assets/javascript/game3.js"></script>
 </body>
+
 </html>

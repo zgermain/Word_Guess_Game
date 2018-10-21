@@ -3,13 +3,13 @@
 var wins = 0;
 var losses = 0;
 var guesses = 12;
-var letterGuesses = [];
+var letterGuesses = ["Press Any Key to Start"];
 var letterArray = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var wordList = ['Stuff', 'Test', 'String of Words', 'Zack']
 var randomWord = "";
-var hiddenWord = [];
+var hiddenWord = ["Guess Me."];
 var userInput = "";
-var winStatus = false;
+var winStatus = true;
 
 function letterCheck(inputtxt){
     var letters = /^[A-Za-z]+$/;
@@ -64,10 +64,15 @@ function resetGame(){
     guesses = 12;
     letterGuesses = [];
     hiddenWord = [];
+    document.getElementById("youWin").textContent = "";
+    document.getElementById("youLose").textContent = "";
+
 
     pickRandomWord();
     hideWord();
     display();
+    
+
     
     console.log("randomWord: " + randomWord);
     console.log("hiddenWord: " + hiddenWord);
@@ -85,16 +90,24 @@ function loseGame(){
 
 function checkLose(){
     if (guesses === 0){
+
         loseGame();
-        resetGame();
+
+        document.getElementById("youLose").textContent = "Loser";
+        winStatus = true;
+        letterGuesses = ["Press Any Key to Start"]
+        display();
     };
 };
 
 function checkWin(){
     if (String(hiddenWord.join('')) == randomWord){
+
         winGame();
+
+        letterGuesses = ["Press Any Key to Start"]
+        document.getElementById("youWin").textContent = "Winner";
         display();
-        alert("Test Win");
         winStatus = true;
     };
 };
@@ -108,7 +121,7 @@ function continueGame(){
 
 
 //Game Cycle
-resetGame();
+// resetGame();
 display();
 
 

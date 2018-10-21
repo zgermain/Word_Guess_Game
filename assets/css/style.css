@@ -37,6 +37,9 @@ p{
     text-align: center;
 }
 
+.continue{
+    color:rgba(251, 252, 255, 0.493);
+}
 #hiddenWord-div{
     letter-spacing: 3px;
 }
@@ -63,7 +66,7 @@ p{
         font-size:20px;
     }
 
-    #wins-div, #losses-div, #guesses-div, #letterGuesses-div{
+    p{
         font-size:30px;
     }
 
@@ -85,7 +88,7 @@ p{
         font-size:15px;
     } */
 
-    #wins-div, #losses-div, #guesses-div, #letterGuesses-div{
+    p{
         font-size:25px;
     }
 
